@@ -132,3 +132,23 @@ a:visited {
     background: #d9d7e1
  }
 
+ @media screen and (max-width: 767px) {
+    .school{
+        width: 100%;
+    }
+    .labphoto {
+        width: 100%;
+    }
+    .publication {
+        width: 100%;
+    }
+    .university {
+        width: 100%;
+    }
+    .lab {
+        width: 100%;
+    }
+    h3 {
+        width: 50%
+    }
+}
