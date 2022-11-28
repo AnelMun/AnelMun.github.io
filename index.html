@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <script src="main.js"></script>
+  <title>Anel Mun's CV</title>
+</head>
+<body>
+  <header>
+    <div class="banner">Curriculum Vitae</div>
+  </header>
+   <container class="top-nav">
+    <div>
+      <img src="images/logo.png" alt="logo" width="68px" height="68px">
+    </div>
+    <input id="menu-toggle" type="checkbox" />
+    <label class='menu-button-container' for="menu-toggle">
+    <div class='menu-button'></div>
+  </label>
+    <ul class="menu">
+      <li><a class="active" href="#profile">Profile</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#activities">Extracurricular activities</a></li>
+        <li><a href="#languages">Languages</a></li>
+        <li><a href="pages/experience.html">Research experience</a></li>
+        <li><a href="#contacts">My contacts</a></li>
+    </ul>
+  </container >
+  
+    <h1 id="main-heading" class="topic">
+      Anel Mun
+    </h1>
+<!-- Profile -->
+<div class="profile">
+  
+  <article id="profile">
+      <h2>My profile</h2>
+      <p>
+        My name is Anel Mun. Currently, I’m a 4th year undergraduate student in Biological Sciences at Nazarbayev University (Astana, Kazakhstan). I have a wide spectrum of interests, including biomedical technology, polymer biomedical chemistry and molecular biology. In 2016-2018, as a part of research team in Al-Farabi Kazakh National University (Almaty, Kazakhstan), I worked on development of radiation technology to produce polymer hydrogel dressings containing various types of physiologically active substances. The results of this research were published in international Eurasian Chemico-Technological Journal. Since Septemeber of 2022, I'm working as research assistant for Vesselin Paunov in Nazarbayev University.
+      </p>
+    </article>
+    </div>
+ 
+ <!-- Gallery -->
+ <!-- Education -->
+
+ <!--Gallery -->
+<div class="row">
+  <div class="column">
+    <img src="images/IMG_2569.JPG" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="images/IMG_2570.JPG" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="images/IMG_2571.JPG" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="images/IMG_2572.JPG" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="images/IMG_2574.JPG" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="images/IMG_2573.JPG" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow">
+  </div>
+</div>
+<!-- The Modal/Lightbox -->
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 6</div>
+      <img src="images/IMG_2569.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 6</div>
+      <img src="images/IMG_2570.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 6</div>
+      <img src="images/IMG_2571.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 6</div>
+      <img src="images/IMG_2572.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">5 / 6</div>
+      <img src="images/IMG_2574.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">6 / 6</div>
+      <img src="images/IMG_2573.JPG" style="width:100%">
+    </div>
+
+    <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <!-- Caption text -->
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+    <!-- Thumbnail image controls -->
+    <div class="column">
+      <img class="demo cursor" src="images/IMG_2569.JPG" style="width:100%" onclick="currentSlide(1)" alt="<i>I am...</i>">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="images/IMG_2570.JPG" style="width:100%" onclick="currentSlide(2)" alt="<i>Research assistant</i>">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="images/IMG_2571.JPG" style="width:100%" onclick="currentSlide(3)" alt="<i>Double Dean's List holder</i>">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="images/IMG_2572.JPG" style="width:100%" onclick="currentSlide(4)" alt="<i>Leadership team former member</i>">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="images/IMG_2574.JPG" style="width:100%" onclick="currentSlide(5)" alt="<i>Dance contests winner</i>">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="images/IMG_2573.JPG" style="width:100%" onclick="currentSlide(6)" alt='<i>"Altyn Belgi" holder</i>'>
+    </div>
+  </div>
+</div>
+
+<section>
+<div class="education">
+  <article id="education">
+      <h2>Education</h2>
+       <ul class='list 1'>
+        <li><b>Bachelor of Science in Biological Sciences</b> (2019 - present): Nazarbayev University - Astana, Kazakhstan</li>
+        <li><b>Foundation Year Program</b> (2018 - 2019): Nazarbayev University - Astana, Kazakhstan</li>
+        <li><b>Secondary Education Diploma</b> (2007 - 2018): School-gymnasium №60 - Almaty, Kazakhstan</li>
+        <img src="images/image.png" class="icon1" >
+      </ul>
+      </p>
+    </article>
+    </div>
+   <!-- Achievements -->
+<div class="achievements">
+  <article id="achievements">
+      <h2>Achievements</h2>
+        <ul class='list 2'>
+          <li>Double <b>Dean's list</b> award winner: Spring 2021, Fall 2021</li>
+          <li>Graduated public school-gymnasium with a <b>golden medal</b> (“Altyn Belgi” award) – excellent grades in all subjects, confirmed by final examination </li>
+          <li><b>Silver prize-winner</b> of International competition of scientific projects “Discovering Scientific World” in space biology and medicine (2018)</li>
+          <li><b>Bronze prize-winner</b> of Republic competition of scientific projects “Daryn” in applied mathematics (2018)</li>
+          <li><b>Bronze prize-winner</b> of International competition of mathematics projects named after Zholdazbekov (2018)</li>
+          <li><b>Golden prize-winner</b> of Republic competition of scientific projects “Daryn” in chemistry (2017)</li>
+          <li><b>Silver prize-winner</b> of International Olympiad of scientific projects “Constellation” 2017 in chemistry (2017)</li>
+        </ul>
+        <img src="images/image2.png" class="image2" >
+    </article>
+    </div>
+<div class="activities">
+  <article id="activities">
+      <h2>Extracurricular activities</h2>
+        <ul class='list 3'>
+          <li><b>Co-founder of online international shop</b> of Korean goods and clothes <a href="https://www.instagram.com/danamoon_garden/?hl=ru"> "Moon Garden"</a> (2020-present)</li>
+          <li><b>Self-taught creator of website</b> for <a href="https://moongarden.ml">"Moon Garden" online shop</a> (2020-present)</li>
+          <li><b>Board member and vice-president</b> of Nazarbayev University Dance Club (2018-2020)</li>
+          <li><b>Winner and participant of multiple international and republic</b> dancing and singing competitions (2007-present)</li>
+          <li><b>Member of organizing team </b> of Nazarbayev University’s “Dance Cup” competition (2019)</li>
+          <li><b>Member</b> of Nazarbayev University <b>Contemporary Dance Club</b> (2018-2019)</li>
+          <li><b>Member</b> of Nazarbayev University <b>Volunteers Club</b> (2018-2019)</li>
+          <li>Self-taught <b>guitar and ukulele player</b> (2016-present)</li>
+          <li>Piano School <b>Graduate</b> (2008-2014)</li>
+        </ul>
+         <img src="images/image3.png" class="image3" >
+    </article>
+    </div>
+<div class="languages">
+  <article id="languages">
+      <h2>Languages</h2>
+        <ul class='list 4'>
+          <li><b>Russian</b> - native speaker</li>
+          <li><b>English</b> - advanced level</li>
+          <li><b>Kazakh</b> - intermediate level</li>
+          <li><b>American Sign Language</b> – elementary level (self-taught)</li>
+        </ul>
+        <img src="images/image4.png" class="image4" >
+    </article>
+    </div>
+</section>
+<!-- Research experience -->
+<div class="research">
+  <article id="research">
+      <h2>Research Experience</h2>
+      <p>
+        For my reasearch experience information follow this <b><a href="experience.html">link</a></b>.
+      </p>
+    </article>
+    </div>
+
+
+
+<footer>
+    <div class="contacts">
+     <article id="contacts">
+      <div >
+        <h2>My contacts</h2>
+        <p>
+          Astana city, Kazakhstan <br>
+          Nazarbayev University <br>
+          53 Kabanbay Batyr ave. <br>
+          Ph.: +7-702-785-8021 <br>
+          Email:
+          <a href="anel.mun@nu.edu.kz" class="email">
+            anel.mun@nu.edu.kz
+          </a><br>
+          Instagram account:
+          <a href="https://www.instagram.com/anekamun_/?hl=ru" class="instagram">
+        anekamun_
+          </a>
+        </p>
+      </div>
+
+     
