@@ -1,0 +1,134 @@
+h1 {
+    color:black;
+    text-align: left;
+    font-size: 35px;
+    background: #d1d3df;
+    text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
+    background-image: url("../images/background.jpg");
+    padding-left: 1%;
+}
+h2 {
+     background-color: #deeff0;
+}
+* {
+  font-family: "Raleway";
+  box-sizing: border-box;
+}
+section{
+  display: flex;
+  flex-wrap: wrap;
+  border: none;
+  margin-top: 5px;}
+
+.school {
+    border-color: #d1d3df;
+    position: relative;
+  width: 70%;
+  height: auto;
+  border-style: dashed;
+  border-width: 5px;
+  background-color: #ffffff;
+  text-align: left;
+  text-indent: 1px;
+  order: 1;
+  margin-left: 1%;
+  margin-top: 10px;
+  background: linear-gradient(to bottom, #deeff0, #d9d7e1);
+  border-radius: 5%;
+  display: flex;
+}
+
+.labphoto {
+    order: 3;
+    position: relative;
+    width: 27%;
+    height: auto;
+    border-color: #d1d3df;
+    position: relative;
+  border-style: dashed;
+  border-width: 5px;
+  background-color: #ffffff;
+  text-align: center;
+  text-indent: 1px;
+  margin-left: 1%;
+  margin-top: 10px;
+  background: linear-gradient(to bottom, #deeff0, #d9d7e1);
+  border-radius: 5%
+}
+ul {
+    display: inline-block;
+    text-align: left;
+}
+
+.publication {
+    border-color: #d1d3df;
+    position: relative;
+  width: 100%;
+  height: auto;
+  border-style: dashed;
+  border-width: 5px;
+  background-color: #ffffff;
+  text-align: left;
+  text-indent: 1px;
+  order: 1;
+  margin-left: 1%;
+  margin-right: 1%;
+  margin-top: 10px;
+  background: linear-gradient(to bottom, #deeff0, #d9d7e1);
+  padding-left: 1%;
+  display: flex;
+}
+.university {
+    order: 1;
+    position: relative;
+    width: 70%;
+    height: auto;
+    border-color: #d1d3df;
+    position: relative;
+  border-style: dashed;
+  border-width: 5px;
+  background-color: #ffffff;
+  text-align: left;
+  text-indent: 1px;
+  margin-left: 1%;
+  margin-top: 10px;
+  background: linear-gradient(to bottom, #deeff0, #d9d7e1);
+  border-radius: 5%
+}
+.lab{
+    order: 2;
+    position: relative;
+    width: 27%;
+    height: auto;
+    border-color: #d1d3df;
+    position: relative;
+  border-style: dashed;
+  border-width: 5px;
+  background-color: #ffffff;
+  text-align: center;
+  text-indent: 1px;
+  margin-left: 1%;
+  margin-top: 10px;
+  background: linear-gradient(to bottom, #deeff0, #d9d7e1);
+  border-radius: 5%
+}
+
+
+a:hover {
+  color: #070f11;
+  font-weight: bold;
+  font-size: 20px
+}
+/*visited*/
+a:visited {
+    color: grey;
+  
+}
+ h3 {
+    padding-left: 3%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    width: 20%;
+    background: #d9d7e1
+ }
+
