@@ -12,13 +12,13 @@
   <header>
     <div class="banner">Curriculum Vitae</div>
   </header>
-   <container class="top-nav">
+   <container class="navigationmenu">
     <div>
       <img src="images/logo.png" alt="logo" width="68px" height="68px">
     </div>
-    <input id="menu-toggle" type="checkbox" />
-    <label class='menu-button-container' for="menu-toggle">
-    <div class='menu-button'></div>
+    <input id="menu_switcher" type="checkbox" />
+    <label class='menu-icon-container' for="menu_switcher">
+    <div class='menu-icon'></div>
   </label>
     <ul class="menu">
       <li><a class="active" href="#profile">Profile</a></li>
@@ -35,8 +35,7 @@
       Anel Mun
     </h1>
 <!-- Profile -->
-<div class="profile">
-  
+<div class="profile"> 
   <article id="profile">
       <h2>My profile</h2>
       <p>
@@ -45,96 +44,99 @@
     </article>
     </div>
  
- <!-- Gallery -->
- <!-- Education -->
-
+<div class="gallery"> 
+  <article id="gallery">
+      <h2>This is the gallery of my achievements (click on a photo)</h2>
+    </article>
+  </div>
+ 
  <!--Gallery -->
-<div class="row">
-  <div class="column">
-    <img src="images/IMG_2569.JPG" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow">
+<div class="thumbnails">
+  <div class="window">
+    <img src="images/IMG_2569.JPG" style="width:100%" onclick="openLightbox();currentSlide(1)" class="hover-shadow">
   </div>
-  <div class="column">
-    <img src="images/IMG_2570.JPG" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow">
+  <div class="window">
+    <img src="images/IMG_2570.JPG" style="width:100%" onclick="openLightbox();currentSlide(2)" class="hover-shadow">
   </div>
-  <div class="column">
-    <img src="images/IMG_2571.JPG" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow">
+  <div class="window">
+    <img src="images/IMG_2571.JPG" style="width:100%" onclick="openLightbox();currentSlide(3)" class="hover-shadow">
   </div>
-  <div class="column">
-    <img src="images/IMG_2572.JPG" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow">
+  <div class="window">
+    <img src="images/IMG_2572.JPG" style="width:100%" onclick="openLightbox();currentSlide(4)" class="hover-shadow">
   </div>
-  <div class="column">
-    <img src="images/IMG_2574.JPG" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow">
+  <div class="window">
+    <img src="images/IMG_2574.JPG" style="width:100%" onclick="openLightbox();currentSlide(5)" class="hover-shadow">
   </div>
-  <div class="column">
-    <img src="images/IMG_2573.JPG" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow">
+  <div class="window">
+    <img src="images/IMG_2573.JPG" style="width:100%" onclick="openLightbox();currentSlide(6)" class="hover-shadow">
   </div>
 </div>
-<!-- The Modal/Lightbox -->
-<div id="myModal" class="modal">
-  <span class="close cursor" onclick="closeModal()">&times;</span>
-  <div class="modal-content">
 
-    <div class="mySlides">
-      <div class="numbertext">1 / 6</div>
+<div id="myLightbox" class="lightbox">
+  <span class="close cursor" onclick="closeLightbox()">&times;</span>
+  <div class="lightbox-content">
+
+    <div class="myPhotos">
+      <div class="Photonumber">1 / 6</div>
       <img src="images/IMG_2569.JPG" style="width:100%">
     </div>
 
-    <div class="mySlides">
-      <div class="numbertext">2 / 6</div>
+    <div class="myPhotos">
+      <div class="Photonumber">2 / 6</div>
       <img src="images/IMG_2570.JPG" style="width:100%">
     </div>
 
-    <div class="mySlides">
-      <div class="numbertext">3 / 6</div>
+    <div class="myPhotos">
+      <div class="Photonumber">3 / 6</div>
       <img src="images/IMG_2571.JPG" style="width:100%">
     </div>
 
-    <div class="mySlides">
-      <div class="numbertext">4 / 6</div>
+    <div class="myPhotos">
+      <div class="Photonumber">4 / 6</div>
       <img src="images/IMG_2572.JPG" style="width:100%">
     </div>
 
-    <div class="mySlides">
-      <div class="numbertext">5 / 6</div>
+    <div class="myPhotos">
+      <div class="Photonumber">5 / 6</div>
       <img src="images/IMG_2574.JPG" style="width:100%">
     </div>
 
-    <div class="mySlides">
-      <div class="numbertext">6 / 6</div>
+    <div class="myPhotos">
+      <div class="Photonumber">6 / 6</div>
       <img src="images/IMG_2573.JPG" style="width:100%">
     </div>
 
-    <!-- Next/previous controls -->
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+    <a class="prev" onclick="nextPhoto(-1)">&#10094;</a>
+    <a class="next" onclick="nextPhoto(1)">&#10095;</a>
 
-    <!-- Caption text -->
-    <div class="caption-container">
-      <p id="caption"></p>
+  
+    <div class="description-container">
+      <p id="description"></p>
     </div>
 
-    <!-- Thumbnail image controls -->
-    <div class="column">
+
+    <div class="window">
       <img class="demo cursor" src="images/IMG_2569.JPG" style="width:100%" onclick="currentSlide(1)" alt="<i>I am...</i>">
     </div>
 
-    <div class="column">
+    <div class="window">
       <img class="demo cursor" src="images/IMG_2570.JPG" style="width:100%" onclick="currentSlide(2)" alt="<i>Research assistant</i>">
     </div>
 
-    <div class="column">
+    <div class="window">
       <img class="demo cursor" src="images/IMG_2571.JPG" style="width:100%" onclick="currentSlide(3)" alt="<i>Double Dean's List holder</i>">
     </div>
 
-    <div class="column">
+    <div class="window">
       <img class="demo cursor" src="images/IMG_2572.JPG" style="width:100%" onclick="currentSlide(4)" alt="<i>Leadership team former member</i>">
     </div>
 
-    <div class="column">
+    <div class="window">
       <img class="demo cursor" src="images/IMG_2574.JPG" style="width:100%" onclick="currentSlide(5)" alt="<i>Dance contests winner</i>">
     </div>
 
-    <div class="column">
+    <div class="window">
       <img class="demo cursor" src="images/IMG_2573.JPG" style="width:100%" onclick="currentSlide(6)" alt='<i>"Altyn Belgi" holder</i>'>
     </div>
   </div>
@@ -222,12 +224,16 @@
           53 Kabanbay Batyr ave. <br>
           Ph.: +7-702-785-8021 <br>
           Email:
-          <a href="anel.mun@nu.edu.kz" class="email">
+          <a href="mailto:anel.mun@nu.edu.kz" class="email">
             anel.mun@nu.edu.kz
           </a><br>
           Instagram account:
           <a href="https://www.instagram.com/anekamun_/?hl=ru" class="instagram">
-        anekamun_
+        @anekamun_
+          </a><br>
+          Instagram account of my shop:
+          <a href="https://www.instagram.com/danamoon_garden/?hl=ru" class="shop_instagram">
+        @danamoon_garden
           </a>
         </p>
       </div>
