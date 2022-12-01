@@ -455,7 +455,7 @@ footer {
   margin-bottom: 10px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 900px) {
     .modal {
   padding-top: 50px;
 }
@@ -503,6 +503,9 @@ footer {
     width: 50%;
     margin-left: 25%;
   margin-right: 25%;
+}
+.banner {
+  font-weight: 30px;
 }
 }
 
