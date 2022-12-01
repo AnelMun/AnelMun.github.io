@@ -518,6 +518,7 @@ footer {
 }
 .banner {
   font-size: 70%;
+  padding-top: 3%;
 }
 .thumbnails > .window {
   padding: 0 1px;
