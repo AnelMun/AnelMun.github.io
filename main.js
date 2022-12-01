@@ -1,31 +1,31 @@
-// Open the Modal
-function openModal() {
-  document.getElementById("myModal").style.display = "block";
+
+function openLightbox() {
+  document.getElementById("myLightbox").style.display = "block";
 }
 
 // Close the Modal
-function closeModal() {
-  document.getElementById("myModal").style.display = "none";
+function closeLightbox() {
+  document.getElementById("myLightbox").style.display = "none";
 }
 
 var slideIndex = 1;
-showSlides(slideIndex);
+showPhotos(slideIndex);
 
 // Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
+function nextPhoto(n) {
+  showPhotos(slideIndex += n);
 }
 
 // Thumbnail image controls
 function currentSlide(n) {
-  showSlides(slideIndex = n);
+  showPhotos(slideIndex = n);
 }
 
-function showSlides(n) {
+function showPhotos(n) {
   var i;
-  var slides = document.getElementsByClassName("mySlides");
+  var slides = document.getElementsByClassName("myPhotos");
   var dots = document.getElementsByClassName("demo");
-  var captionText = document.getElementById("caption");
+  var descriptionText = document.getElementById("description");
   if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
@@ -36,5 +36,5 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
+  descriptionText.innerHTML = dots[slideIndex-1].alt;
 }
