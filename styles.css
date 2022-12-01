@@ -21,7 +21,7 @@ header{
   font-family: "Raleway";
   box-sizing: border-box;
 }
-.top-nav {
+.navigationmenu {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -45,7 +45,7 @@ header{
   overflow: hidden;
 }
 
-.menu-button-container {
+.menu-icon-container {
   display: none;
   height: 100%;
   width: 30px;
@@ -55,13 +55,13 @@ header{
   align-items: center;
 }
 
-#menu-toggle {
+#menu_switcher {
   display: none;
 }
 
-.menu-button,
-.menu-button::before,
-.menu-button::after {
+.menu-icon,
+.menu-icon::before,
+.menu-icon::after {
   display: block;
   background-color: #fff;
   position: absolute;
@@ -71,28 +71,28 @@ header{
   border-radius: 2px;
 }
 
-.menu-button::before {
+.menu-icon::before {
   content: '';
   margin-top: -8px;
 }
 
-.menu-button::after {
+.menu-icon::after {
   content: '';
   margin-top: 8px;
 }
-#menu-toggle:checked + .menu-button-container .menu-button::before {
+#menu_switcher:checked + .menu-icon-container .menu-icon::before {
   margin-top: 0px;
   transform: rotate(405deg);
 }
-#menu-toggle:checked + .menu-button-container .menu-button {
+#menu_switcher:checked + .menu-icon-container .menu-icon {
   background: rgba(255, 255, 255, 0);
 }
-#menu-toggle:checked + .menu-button-container .menu-button::after {
+#menu_switcher:checked + .menu-icon-container .menu-icon::after {
   margin-top: 0px;
   transform: rotate(-405deg);
 }
-@media screen and (max-width: 767px) {
-  .menu-button-container {
+@media screen and (max-width: 900px) {
+  .menu-icon-container {
     display: flex;
   }
   .menu {
@@ -105,14 +105,14 @@ header{
     justify-content: center;
     align-items: center;
   }
-  #menu-toggle ~ .menu li {
+  #menu_switcher ~ .menu li {
     height: 0;
     margin: 0;
     padding: 0;
     border: 0;
     transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
   }
-  #menu-toggle:checked ~ .menu li {
+  #menu_switcher:checked ~ .menu li {
     border: 1px solid #333;
     height: 2.5em;
     padding: 0.5em;
@@ -304,23 +304,23 @@ section{
 * {
   box-sizing: border-box;
 }
-.row > .column {
+.thumbnails > .window {
   padding: 0 8px;
 }
 
-.row:after {
+.thumbnails:after {
   content: "";
   display: table;
   clear: both;
 }
 
-.column {
+.window {
   float: left;
   width: 16.6%;
-  margin-top: 1%;
+  margin-top: 0;
 }
 
-.modal {
+.lightbox {
   display: none;
   position: fixed;
   z-index: 1;
@@ -333,8 +333,7 @@ section{
   background:rgba(0, 0, 0, 0.5);
 }
 
-/* Modal Content */
-.modal-content {
+.lightbox-content {
   position: relative;
   background-color: #fefefe;
   margin: auto;
@@ -358,7 +357,7 @@ section{
   text-decoration: none;
   cursor: pointer;
 }
-.mySlides {
+.myPhotos {
   display: none;
 }
 
@@ -393,7 +392,7 @@ section{
   background-color: rgba(0, 0, 0, 0.2);
 }
 
-.numbertext {
+.Photonumber {
   color: black;
   margin-top: 1%;
   margin left: 5%;
@@ -407,7 +406,7 @@ img {
   margin-bottom: -4px;
 }
 
-.caption-container {
+.description-container {
   text-align: center;
   background-color: black;
   padding: 1px 2px;
@@ -455,8 +454,21 @@ footer {
   margin-bottom: 10px;
 }
 
-@media screen and (max-width: 900px) {
-    .modal {
+.gallery {
+  text-align: center;
+   background-color: #deeff0;
+   font-style: italic;
+   padding-top: 0.1%;
+   padding-bottom: 0.1%;
+   margin-top: 1%;
+   width: auto;
+   margin-left: 0.5%;
+   margin-right: 0.5%;
+   border-radius: 15%;
+}
+
+@media screen and (max-width: 767px) {
+    .lightbox {
   padding-top: 50px;
 }
 .education {
@@ -505,8 +517,15 @@ footer {
   margin-right: 25%;
 }
 .banner {
-  font-weight: 30px;
+  font-size: 70%;
 }
+.thumbnails > .window {
+  padding: 0 1px;
+}
+.gallery {
+  font-size: 90%;
+}
+
 }
 
 
