@@ -3,7 +3,6 @@ function openLightbox() {
   document.getElementById("myLightbox").style.display = "block";
 }
 
-// Close the Modal
 function closeLightbox() {
   document.getElementById("myLightbox").style.display = "none";
 }
@@ -11,12 +10,10 @@ function closeLightbox() {
 var slideIndex = 1;
 showPhotos(slideIndex);
 
-// Next/previous controls
 function nextPhoto(n) {
   showPhotos(slideIndex += n);
 }
 
-// Thumbnail image controls
 function currentSlide(n) {
   showPhotos(slideIndex = n);
 }
