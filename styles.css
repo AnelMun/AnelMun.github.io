@@ -158,15 +158,15 @@ h1{
 /*ABOUT ME*/
 .profile {
   border-color: #d1d3df;
-  width: auto;
+  width: 100%;
   height: auto;
-  border-style: dashed;
+  border-style: ridge;
   border-width: 5px;
   background-color: #deeff0;
   text-align: center;
   text-indent: 1px;
-  margin-left: 1%;
-  margin-right: 1%;
+  padding-right: 1%;
+  padding-left: 1%;
 }
 
 .education {
@@ -539,11 +539,6 @@ footer {
 }
 h1 {
   font-size: 2rem;
-}
-.profile {
-  border-color: #d1d3df;
-  border-style: dashed;
-  border-width: 4.5px;
 }
 }
 
