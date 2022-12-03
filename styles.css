@@ -534,6 +534,10 @@ footer {
 h1 {
   font-size: 2rem;
 }
+.profile {
+  margin-left: 0.5%;
+  margin-right: 0.5%;
+}
 }
 
 
