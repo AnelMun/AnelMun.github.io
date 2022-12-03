@@ -10,13 +10,9 @@ header{
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: #FFFFFF;
-    font-size: 55px;
+    font-size: 4rem;
 }
-.logo {
-    position: absolute;
-    top: -150px;
-    left: 50px;
-}
+
 * {
   font-family: "Raleway";
   box-sizing: border-box;
@@ -139,7 +135,7 @@ a {
 a:hover {
   color: #070f11;
   font-weight: bold;
-  font-size: 18px
+  font-size: 1.3rem
 }
 /*visited*/
 a:visited {
@@ -150,7 +146,7 @@ h1{
     color:black;
     text-align: center;
     font-family: "Apple Chancery";
-    font-size: 35px;
+    font-size: 2.2rem;
     background: #d1d3df;
     text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
 }
@@ -347,7 +343,7 @@ section{
   position: absolute;
   top: 10px;
   right: 25px;
-  font-size: 35px;
+  font-size: 3rem;
   font-weight: bold;
 }
 
@@ -375,7 +371,7 @@ section{
   margin-top: -50px;
   color: black;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 2rem;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
@@ -396,7 +392,7 @@ section{
   color: black;
   margin-top: 1%;
   margin left: 5%;
-  font-size: 20px;
+  font-size: 1.5rem;
   padding: 8px 12px;
   position: absolute;
   top: 0;
@@ -411,7 +407,7 @@ img {
   background-color: black;
   padding: 1px 2px;
   color: white;
-  font-size: 25px;
+  font-size: 2rem;
   font-weight: bold;
 }
 
@@ -512,9 +508,9 @@ footer {
     margin-left: 0;
 }
 .contacts {
-    width: 50%;
-    margin-left: 25%;
-  margin-right: 25%;
+    width: 70%;
+    margin-left: 15%;
+  margin-right: 15%;
 }
 .banner {
   font-size: 70%;
@@ -526,7 +522,18 @@ footer {
 .gallery {
   font-size: 90%;
 }
-
+.close {
+  font-size: 2rem;
+}
+.Photonumber {
+  font-size: 1rem;
+}
+.description-container {
+  font-size: 1.5rem;
+}
+h1 {
+  font-size: 2rem;
+}
 }
 
 
